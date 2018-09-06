@@ -1,0 +1,80 @@
+\documentclass[serif,mathserif]{beamer}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{algorithm,algorithmic}
+\usepackage{pstricks,pst-node}
+\usepackage{multimedia}
+\usepackage[normal,tight,center]{subfigure}
+\setlength{\subfigcapskip}{-.5em}
+\usepackage{beamerthemesplit}
+\usetheme{lankton-keynote}
+
+\author[WEB DEVELOPMENT]{Neethu Sanilkumar \quad Saira Sajeer\\Risana Rahim \quad Sneha Anna Joshy}
+
+\title[Python Flask\hspace{2em}\insertframenumber/\inserttotalframenumber]{WEB DEVELOPMENT}
+\date{AUGUST 09 2018} %leave out for today's date to be insterted
+
+\institute{To create a simple login page }
+
+\begin{document}
+
+\maketitle
+
+% \section{Introduction}  % add these to see outline in slides
+
+\begin{frame}
+  \frametitle{Python Flask}
+  \begin{itemize}
+  \item Flask is a micro web framework written in Python. \pause
+  \item  It is classified as a micro framework because it does not require particular tools or libraries.\pause
+  \item Easy to learn and simple to use, enabling you to build your web app in a short amount of time.\pause 
+  \item Flask is a small and powerful web framework for Python. %leave out the \pause on the final item
+  \end{itemize}
+\end{frame}
+
+% \section{Main Body} % add these to see outline in slides
+
+\begin{frame}
+  \frametitle{Features...}
+  \begin{itemize}
+  \item Built-in development server and fast debugger.
+  \item Unicode based
+  \item Flask has a lightweight and modular design, so it easy to transform it to the web framework you need with a few extensions.
+  \item HTTP request handling functionality%leave out the \pause on the final item
+  \item High Flexibility
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{How does this works?}
+  \begin{itemize}
+  \item simple log-in page. 
+  \item Enter the page using valid user name and password.
+  \item Entering the incorrect credentials, then press login this will lead to a error response: “Error: Invalid Credentials. Please try again.”
+  \item Now the correct username and password will redirected to the / URL.
+  \item Now it leads to a Web page with Home page and Welocome page.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Procedure}
+ \begin{itemize}
+ \item Created a directory with two Sub directories template and static . 
+ \item Python file having the main source is created inside the main directory .
+ \item Template contains HTML Codes for creating Homepage and Welcome page.
+ \item Static contains the Bootstrap program for the structuring of the pages .
+ \item These HTML files are fetched to the Python program using render-template with function return.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{CONCLUSION}
+Now that users have the ability to login, we need to protect that URL / from unauthorized access. In other words, when an end user hits that endpoint, unless they are already logged in, then they should be immediately sent to the login page. 
+\end{frame}
+\begin{frame}
+    THANK YOU
+\end{frame}
+
+
+\end{document}
+
+
